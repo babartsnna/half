@@ -13,7 +13,7 @@ public class enemy : MonoBehaviour
 
     void Update()
     {
-        float dist = Vector3.Distance(transorm.position,target.position);
+        float dist = Vector3.Distance(transform.position,target.position);
         if(dist < 6)
         {
             transform.position = new Vector3(transform.position.x,1,transform.position.z);
